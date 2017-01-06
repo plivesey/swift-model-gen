@@ -16,6 +16,7 @@
 		618D8E601E200B03006806CF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E5F1E200B03006806CF /* DataModel.swift */; };
 		618D8E621E200B2A006806CF /* DataConvertible+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E611E200B2A006806CF /* DataConvertible+.swift */; };
 		618D8E651E201101006806CF /* UnitTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E641E201101006806CF /* UnitTestModel.swift */; };
+		618D8E671E20118E006806CF /* Equatable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E661E20118E006806CF /* Equatable+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		618D8E5F1E200B03006806CF /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		618D8E611E200B2A006806CF /* DataConvertible+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataConvertible+.swift"; sourceTree = "<group>"; };
 		618D8E641E201101006806CF /* UnitTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestModel.swift; sourceTree = "<group>"; };
+		618D8E661E20118E006806CF /* Equatable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Equatable+.swift"; sourceTree = "<group>"; };
 		CF82351C609B1E1A1B6E59A8 /* Pods_ModelParserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelParserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2809EB550F8AE5F1E50B8E /* Pods-ModelParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelParserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModelParserTests/Pods-ModelParserTests.release.xcconfig"; sourceTree = "<group>"; };
 		FB23C363D28A7BB259468B1F /* Pods_ModelParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				618D8E5D1E200AE6006806CF /* DataConvertible.swift */,
 				618D8E5F1E200B03006806CF /* DataModel.swift */,
 				618D8E611E200B2A006806CF /* DataConvertible+.swift */,
+				618D8E661E20118E006806CF /* Equatable+.swift */,
 				618D8E451E2009D5006806CF /* Info.plist */,
 			);
 			path = ModelParser;
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				618D8E5C1E200A77006806CF /* Parser.swift in Sources */,
+				618D8E671E20118E006806CF /* Equatable+.swift in Sources */,
 				618D8E5E1E200AE6006806CF /* DataConvertible.swift in Sources */,
 				618D8E601E200B03006806CF /* DataModel.swift in Sources */,
 				618D8E621E200B2A006806CF /* DataConvertible+.swift in Sources */,
