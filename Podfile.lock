@@ -1,0 +1,21 @@
+PODS:
+  - SwiftGen (4.0.1)
+
+DEPENDENCIES:
+  - SwiftGen (from `https://github.com/plivesey/SwiftGen.git`)
+
+EXTERNAL SOURCES:
+  SwiftGen:
+    :git: https://github.com/plivesey/SwiftGen.git
+
+CHECKOUT OPTIONS:
+  SwiftGen:
+    :commit: 4b6baed21949ba77de76faeb95e67891b030716b
+    :git: https://github.com/plivesey/SwiftGen.git
+
+SPEC CHECKSUMS:
+  SwiftGen: 04bbc1fb69add82a7a471380dfbdd00b45912d17
+
+PODFILE CHECKSUM: c08d8feccf205dc382ed075e83fd3c110db448b9
+
+COCOAPODS: 1.1.1
