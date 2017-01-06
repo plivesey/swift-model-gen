@@ -1,0 +1,10 @@
+{
+  "type": "UnitTestModel",
+  "fields": [
+             {"type": "string", "optional": true, "name": "firstName", "doc": "First name of the unit test"},
+             {"type": "string", "name": "lastName"},
+             {"type": "array", "element": "UnitTestModel", "name": "friends"},
+             {"type": "array", "element": "UnitTestModel", "name": "optFriends", "optional": true, "doc": "An optional array"},
+             {"type": "int", "name": "age", "optional": true}
+             ]
+}

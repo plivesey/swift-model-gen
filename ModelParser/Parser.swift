@@ -77,5 +77,10 @@ public struct Parser {
  A parse error thrown when parsing models.
  */
 public struct ParseError: Error {
+
     public let message: String
+
+    public init(message: String) {
+        self.message = message
+    }
 }
