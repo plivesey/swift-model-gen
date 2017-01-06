@@ -10,6 +10,10 @@
 		618D8E4B1E2009D5006806CF /* ModelParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618D8E411E2009D5006806CF /* ModelParser.framework */; };
 		618D8E501E2009D5006806CF /* ModelParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E4F1E2009D5006806CF /* ModelParserTests.swift */; };
 		618D8E521E2009D5006806CF /* ModelParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 618D8E441E2009D5006806CF /* ModelParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		618D8E5C1E200A77006806CF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E5B1E200A77006806CF /* Parser.swift */; };
+		618D8E5E1E200AE6006806CF /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E5D1E200AE6006806CF /* DataConvertible.swift */; };
+		618D8E601E200B03006806CF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E5F1E200B03006806CF /* DataModel.swift */; };
+		618D8E621E200B2A006806CF /* DataConvertible+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618D8E611E200B2A006806CF /* DataConvertible+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		618D8E4A1E2009D5006806CF /* ModelParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		618D8E4F1E2009D5006806CF /* ModelParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelParserTests.swift; sourceTree = "<group>"; };
 		618D8E511E2009D5006806CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618D8E5B1E200A77006806CF /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		618D8E5D1E200AE6006806CF /* DataConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
+		618D8E5F1E200B03006806CF /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		618D8E611E200B2A006806CF /* DataConvertible+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataConvertible+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				618D8E441E2009D5006806CF /* ModelParser.h */,
+				618D8E5B1E200A77006806CF /* Parser.swift */,
+				618D8E5D1E200AE6006806CF /* DataConvertible.swift */,
+				618D8E5F1E200B03006806CF /* DataModel.swift */,
+				618D8E611E200B2A006806CF /* DataConvertible+.swift */,
 				618D8E451E2009D5006806CF /* Info.plist */,
 			);
 			path = ModelParser;
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					618D8E401E2009D5006806CF = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					618D8E491E2009D5006806CF = {
@@ -196,6 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618D8E5C1E200A77006806CF /* Parser.swift in Sources */,
+				618D8E5E1E200AE6006806CF /* DataConvertible.swift in Sources */,
+				618D8E601E200B03006806CF /* DataModel.swift in Sources */,
+				618D8E621E200B2A006806CF /* DataConvertible+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +337,7 @@
 		618D8E561E2009D5006806CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterlivesey.ModelParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +357,7 @@
 		618D8E571E2009D5006806CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +376,7 @@
 		618D8E591E2009D5006806CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ModelParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterlivesey.ModelParserTests;
@@ -367,6 +388,7 @@
 		618D8E5A1E2009D5006806CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ModelParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterlivesey.ModelParserTests;
@@ -394,6 +416,7 @@
 				618D8E571E2009D5006806CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		618D8E581E2009D5006806CF /* Build configuration list for PBXNativeTarget "ModelParserTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +425,7 @@
 				618D8E5A1E2009D5006806CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
